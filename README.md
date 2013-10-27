@@ -1,4 +1,4 @@
 Performance-Logger
 ==================
 
-A java tool for logging an applications' performance using log4j
+A simple java tool for logging your application performance using log4j
