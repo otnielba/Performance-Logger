@@ -27,7 +27,7 @@ Usage
 IMPORTANT: 
 ----------
 
-This tool uses log4j. You MUST configure the log4j according to your needs or this tool will be useless. Do this with respect for disc space, sampling interval and log4j MaxBackupIndex property.
+This tool uses log4j. You MUST configure the log4j according to your needs or this tool will be useless. Do this with respect for disc space, sampling interval and log4j *MaxBackupIndex* property.
 For example, with the default sampling interval of 1 second, a 24 hour log size will be about 16MB.
 It is highly recommended to add to your log4j configuration a separate appender for the Performance Logger in order to keep your other logs nice and clean. 
 
@@ -88,7 +88,7 @@ performanceSampler.shutdown();
 
 Legal
 ------------
-This project is distributed under my STL license (Spread The Love).
-Meaning  It’s free, do whatever you want with it. 
+This project is distributed under my *STL license (Spread The Love)*.
+Meaning it’s free, do whatever you want with it. 
 
 
