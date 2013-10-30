@@ -5,7 +5,9 @@ Description
 ===========
 A simple tool to log your Java application basic performance using log4j. This tool is a supplement for other GUI oriented tools such as Jconsole and VirtualVM that are not oriented for long term profiling. 
 This project is aimed for :
+---------------------------
 Java developers who want to track their application’s performance over time. This is very useful in benchmark environments and system profiling.       
+
 Java developers that are not very familiar with Java performance tools and APIs.
 
 Overview
