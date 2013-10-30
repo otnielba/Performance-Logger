@@ -68,7 +68,6 @@ Custom usage:
 
 <pre><code>
 PerformanceSampler performanceSampler = PerformanceSampler.getPerformanceSampler();
-performanceSampler.logPerformanceMetrics();
 
 PerformanceLoggerConfiguration configuration = new PerformanceLoggerConfiguration();
 configuration.setMemorySamplerOn(true);// default is on == true;
@@ -77,6 +76,8 @@ configuration.setCpuSamplerOn(true);// default is on == true;
 configuration.setDataMetricGranularity(DataGranulrarity.MB); // log memory as MB/KB/Bytes. default is KB
 configuration.setSampleInterval(2000);// in milliseconds. Default is 1 second
 performanceSampler.setConfiguration(configuration);  
+
+performanceSampler.logPerformanceMetrics();
 
 // do your stuff here 
 
