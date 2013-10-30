@@ -2,14 +2,14 @@ Performance-Logger
 ==================
 
 Description
-------------
+===========
 A simple tool to log your Java application basic performance using log4j. This tool is a supplement for other GUI oriented tools such as Jconsole and VirtualVM that are not oriented for long term profiling. 
 This project is aimed for :
 Java developers who want to track their application’s performance over time. This is very useful in benchmark environments and system profiling.       
 Java developers that are not very familiar with Java performance tools and APIs.
 
 Overview
-------------
+========
 
 Performance logger collects metrics from 3 samplers. 
 
@@ -86,8 +86,29 @@ performanceSampler.shutdown();
 
 </code></pre>
 
+Output
+======
+
+Example of the log output: 
+
+<pre><code>
+2013-10-31 01:10:08,806 (PerformanceSampler.java) INFO  -  HEAP SIZE - 25776 KB  NON-HEAP SIZE - 6329 KB  CPU% - 81 THREAD COUNT - 39 DEAMON COUNT - 4 THREADS PEAK - 39
+2013-10-31 01:10:09,807 (PerformanceSampler.java) INFO  -  HEAP SIZE - 23293 KB  NON-HEAP SIZE - 6329 KB  CPU% - 81 THREAD COUNT - 38 DEAMON COUNT - 4 THREADS PEAK - 39
+2013-10-31 01:10:10,808 (PerformanceSampler.java) INFO  -  HEAP SIZE - 38389 KB  NON-HEAP SIZE - 6329 KB  CPU% - 80 THREAD COUNT - 39 DEAMON COUNT - 4 THREADS PEAK - 39
+2013-10-31 01:10:11,828 (PerformanceSampler.java) INFO  -  HEAP SIZE - 34626 KB  NON-HEAP SIZE - 6329 KB  CPU% - 81 THREAD COUNT - 39 DEAMON COUNT - 4 THREADS PEAK - 39
+2013-10-31 01:10:12,879 (PerformanceSampler.java) INFO  -  HEAP SIZE - 41493 KB  NON-HEAP SIZE - 6329 KB  CPU% - 79 THREAD COUNT - 40 DEAMON COUNT - 4 THREADS PEAK - 40
+2013-10-31 01:10:13,880 (PerformanceSampler.java) INFO  -  HEAP SIZE - 52551 KB  NON-HEAP SIZE - 6329 KB  CPU% - 81 THREAD COUNT - 40 DEAMON COUNT - 4 THREADS PEAK - 40
+2013-10-31 01:10:14,880 (PerformanceSampler.java) INFO  -  HEAP SIZE - 61869 KB  NON-HEAP SIZE - 6329 KB  CPU% - 81 THREAD COUNT - 40 DEAMON COUNT - 4 THREADS PEAK - 41
+2013-10-31 01:10:15,881 (PerformanceSampler.java) INFO  -  HEAP SIZE - 14968 KB  NON-HEAP SIZE - 6329 KB  CPU% - 82 THREAD COUNT - 40 DEAMON COUNT - 4 THREADS PEAK - 41
+2013-10-31 01:10:16,882 (PerformanceSampler.java) INFO  -  HEAP SIZE - 25165 KB  NON-HEAP SIZE - 6329 KB  CPU% - 79 THREAD COUNT - 41 DEAMON COUNT - 4 THREADS PEAK - 41
+2013-10-31 01:10:17,883 (PerformanceSampler.java) INFO  -  HEAP SIZE - 38925 KB  NON-HEAP SIZE - 6329 KB  CPU% - 82 THREAD COUNT - 42 DEAMON COUNT - 4 THREADS PEAK - 42
+2013-10-31 01:10:18,884 (PerformanceSampler.java) INFO  -  HEAP SIZE - 41015 KB  NON-HEAP SIZE - 6329 KB  CPU% - 82 THREAD COUNT - 41 DEAMON COUNT - 4 THREADS PEAK - 43
+2013-10-31 01:10:19,929 (PerformanceSampler.java) INFO  -  HEAP SIZE - 49720 KB  NON-HEAP SIZE - 6329 KB  CPU% - 82 THREAD COUNT - 41 DEAMON COUNT - 4 THREADS PEAK - 43
+2013-10-31 01:10:20,930 (PerformanceSampler.java) INFO  -  HEAP SIZE - 55396 KB  NON-HEAP SIZE - 6329 KB  CPU% - 80 THREAD COUNT - 41 DEAMON COUNT - 4 THREADS PEAK - 43
+</code></pre>
+
 Legal
-------------
+=====
 This project is distributed under my *STL license (Spread The Love)*.
 Meaning it’s free, do whatever you want with it. 
 
